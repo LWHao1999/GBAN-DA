@@ -14,3 +14,5 @@ rdkit~=2021.03.2
 The datasets folder contains all experimental data used in GBAN-DA: BindingDB [1], BioSNAP [2] and Human [3]. In datasets/bindingdb and datasets/biosnap folders, we have full data with two random and clustering-based splits for both in-domain and cross-domain experiments. In datasets/human folder, there is full data with random split for the in-domain experiment, and with cold split to alleviate ligand bias.
 
 ## Usage
+For the in-domain experiments with vanilla GBAN-DA, you can directly run the following command. ${dataset} could either be bindingdb, biosnap and human. ${split_task} could be random and cold.
+$ python main.py --cfg "configs/DrugBAN.yaml" --data ${dataset} --split ${split_task}
