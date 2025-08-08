@@ -15,4 +15,10 @@ The datasets folder contains all experimental data used in GBAN-DA: BindingDB [1
 
 ## Usage
 For the in-domain experiments with vanilla GBAN-DA, you can directly run the following command. ${dataset} could either be bindingdb, biosnap and human. ${split_task} could be random and cold.
-$ python main.py --cfg "configs/DrugBAN.yaml" --data ${dataset} --split ${split_task}
+You can run this line of code command.  " $ python main.py --cfg "configs/GBAN.yaml" --data ${dataset} --split ${split_task}" "
+
+For the cross-domain experiments with vanilla GBAN-DA, you can directly run the following command. ${dataset} could beither bindingdb, biosnap.
+You can run this line of code command.  " $ python main.py --cfg "configs/GBAN-DA_Non_DA.yaml" --data ${dataset} --split "cluster" "
+
+For the cross-domain experiments with CDAN GBAN-DA, you can directly run the following command. ${dataset} could beither bindingdb, biosnap.
+You can run this line of code command.  " $ python main.py --cfg "configs/GBAN_DA.yaml" --data ${dataset} --split "cluster" "
